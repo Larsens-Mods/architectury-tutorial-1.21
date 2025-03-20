@@ -1,5 +1,6 @@
 package de.larsensmods.mc;
 
+import de.larsensmods.mc.items.TutorialModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,7 @@ public final class TutorialMod {
     public static void init() {
         // Write common init code here.
         LOGGER.info("Initializing Tutorial Mod");
+
+        TutorialModItems.init();
     }
 }

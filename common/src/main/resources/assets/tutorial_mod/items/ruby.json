@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tutorial_mod:item/ruby"
+  }
+}
