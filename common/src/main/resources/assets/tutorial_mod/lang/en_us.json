@@ -1,6 +1,9 @@
 {
   "item.tutorial_mod.ruby": "Ruby",
+
   "item.tutorial_mod.ruby_block": "Ruby Block",
+  "item.tutorial_mod.ruby_ore": "Ruby Ore",
+  "item.tutorial_mod.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
   "category.tutorial_tab": "Tutorial Mod"
 }

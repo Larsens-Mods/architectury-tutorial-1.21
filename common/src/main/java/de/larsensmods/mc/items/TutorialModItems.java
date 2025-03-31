@@ -18,11 +18,17 @@ public class TutorialModItems {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(TutorialMod.MOD_ID, Registries.ITEM);
 
     public static RegistrySupplier<Item> RUBY;
+
     public static RegistrySupplier<Item> RUBY_BLOCK;
+    public static RegistrySupplier<Item> RUBY_ORE;
+    public static RegistrySupplier<Item> DEEPSLATE_RUBY_ORE;
 
     public static void initItems() {
         RUBY = registerItem("ruby", () -> new Item(baseProperties("ruby").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+
         RUBY_BLOCK = registerItem("ruby_block", () -> new BlockItem(TutorialModBlocks.RUBY_BLOCK.get(), baseProperties("ruby_block").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+        RUBY_ORE = registerItem("ruby_ore", () -> new BlockItem(TutorialModBlocks.RUBY_ORE.get(), baseProperties("ruby_ore").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+        DEEPSLATE_RUBY_ORE = registerItem("deepslate_ruby_ore", () -> new BlockItem(TutorialModBlocks.DEEPSLATE_RUBY_ORE.get(), baseProperties("deepslate_ruby_ore").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
         ITEMS.register();
     }
