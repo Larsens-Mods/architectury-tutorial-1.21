@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "tutorial_mod:deepslate_ruby_ore",
+  "result": {
+    "id": "tutorial_mod:ruby"
+  },
+  "experience": 0.15,
+  "cookingtime": 100
+}

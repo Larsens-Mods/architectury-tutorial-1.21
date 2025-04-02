@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": "tutorial_mod:ruby"
+  },
+  "result": {
+    "id": "tutorial_mod:ruby_block",
+    "count": 1
+  }
+}
+

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "tutorial_mod:ruby_block"
+  ],
+  "result": {
+    "id": "tutorial_mod:ruby",
+    "count": 9
+  }
+}
+

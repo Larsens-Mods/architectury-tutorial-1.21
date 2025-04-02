@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "tutorial_mod:deepslate_ruby_ore",
+  "result": {
+    "id": "tutorial_mod:ruby"
+  },
+  "experience": 0.15,
+  "cookingtime": 200
+}
