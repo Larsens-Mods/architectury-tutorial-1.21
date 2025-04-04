@@ -20,9 +20,9 @@ public class TutorialModBlocks {
     public static RegistrySupplier<Block> DEEPSLATE_RUBY_ORE;
 
     public static void initBlocks(){
-        RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(baseProperties("ruby_block")));
-        RUBY_ORE = registerBlock("ruby_ore", () -> new Block(baseProperties("ruby_ore")));
-        DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", () -> new Block(baseProperties("deepslate_ruby_ore")));
+        RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(baseProperties("ruby_block").requiresCorrectToolForDrops().strength(3.5f)));
+        RUBY_ORE = registerBlock("ruby_ore", () -> new Block(baseProperties("ruby_ore").requiresCorrectToolForDrops().strength(3.5f)));
+        DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", () -> new Block(baseProperties("deepslate_ruby_ore").requiresCorrectToolForDrops().strength(3.5f)));
 
         BLOCKS.register();
     }
