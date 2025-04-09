@@ -10,4 +10,6 @@ public class TutorialModTags {
 
     public static final TagKey<Item> RUBY_TOOL_MATERIALS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "ruby_tool_materials"));
 
+    public static final TagKey<Item> REPAIRS_RUBY_ARMOR = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "repairs_ruby_armor"));
+
 }
