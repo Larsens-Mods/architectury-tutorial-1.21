@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "tutorial_mod:block/ruby_furnace_front",
+    "side": "tutorial_mod:block/ruby_furnace_side",
+    "top": "tutorial_mod:block/ruby_furnace_top"
+  }
+}

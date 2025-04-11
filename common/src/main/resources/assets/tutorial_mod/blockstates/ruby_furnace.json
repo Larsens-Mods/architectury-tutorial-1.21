@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tutorial_mod:block/ruby_furnace",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorial_mod:block/ruby_furnace"
+    },
+    "facing=south": {
+      "model": "tutorial_mod:block/ruby_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorial_mod:block/ruby_furnace",
+      "y": 270
+    }
+  }
+}

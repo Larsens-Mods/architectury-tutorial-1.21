@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tutorial_mod:block/ruby_crate",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorial_mod:block/ruby_crate"
+    },
+    "facing=south": {
+      "model": "tutorial_mod:block/ruby_crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorial_mod:block/ruby_crate",
+      "y": 270
+    },
+    "facing=down": {
+      "model": "tutorial_mod:block/ruby_crate",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "tutorial_mod:block/ruby_crate",
+      "x": 270
+    }
+  }
+}

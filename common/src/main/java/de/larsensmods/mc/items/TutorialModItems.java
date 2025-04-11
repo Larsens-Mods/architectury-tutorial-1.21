@@ -35,6 +35,9 @@ public class TutorialModItems {
     public static RegistrySupplier<Item> RUBY_ORE;
     public static RegistrySupplier<Item> DEEPSLATE_RUBY_ORE;
 
+    public static RegistrySupplier<Item> RUBY_CRATE;
+    public static RegistrySupplier<Item> RUBY_FURNACE;
+
     public static void initItems() {
         RUBY = registerItem("ruby", () -> new Item(baseProperties("ruby").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
@@ -52,6 +55,9 @@ public class TutorialModItems {
         RUBY_BLOCK = registerItem("ruby_block", () -> new BlockItem(TutorialModBlocks.RUBY_BLOCK.get(), baseProperties("ruby_block").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
         RUBY_ORE = registerItem("ruby_ore", () -> new BlockItem(TutorialModBlocks.RUBY_ORE.get(), baseProperties("ruby_ore").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
         DEEPSLATE_RUBY_ORE = registerItem("deepslate_ruby_ore", () -> new BlockItem(TutorialModBlocks.DEEPSLATE_RUBY_ORE.get(), baseProperties("deepslate_ruby_ore").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+
+        RUBY_CRATE = registerItem("ruby_crate", () -> new BlockItem(TutorialModBlocks.RUBY_CRATE.get(), baseProperties("ruby_crate").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+        RUBY_FURNACE = registerItem("ruby_furnace", () -> new BlockItem(TutorialModBlocks.RUBY_FURNACE.get(), baseProperties("ruby_furnace").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
         ITEMS.register();
     }
