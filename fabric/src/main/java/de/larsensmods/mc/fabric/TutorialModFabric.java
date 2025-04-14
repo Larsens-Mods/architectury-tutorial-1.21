@@ -1,5 +1,6 @@
 package de.larsensmods.mc.fabric;
 
+import de.larsensmods.mc.fabric.blocks.entities.TutorialModBlockEntityTypesFabric;
 import net.fabricmc.api.ModInitializer;
 
 import de.larsensmods.mc.TutorialMod;
@@ -13,5 +14,8 @@ public final class TutorialModFabric implements ModInitializer {
 
         // Run our common setup.
         TutorialMod.init();
+
+        // Initialize Fabric specific components
+        TutorialModBlockEntityTypesFabric.initBlockEntityTypes();
     }
 }
