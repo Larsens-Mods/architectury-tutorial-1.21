@@ -1,0 +1,8 @@
+{
+  "type": "tutorial_mod:ruby_smelting",
+  "ingredient": "tutorial_mod:ruby_ore",
+  "result": {
+    "id": "tutorial_mod:ruby"
+  },
+  "experience": 0.15
+}
