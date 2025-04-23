@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,lit=false": {
       "model": "tutorial_mod:block/ruby_furnace",
       "y": 90
     },
-    "facing=north": {
+    "facing=north,lit=false": {
       "model": "tutorial_mod:block/ruby_furnace"
     },
-    "facing=south": {
+    "facing=south,lit=false": {
       "model": "tutorial_mod:block/ruby_furnace",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,lit=false": {
       "model": "tutorial_mod:block/ruby_furnace",
+      "y": 270
+    },
+    "facing=east,lit=true": {
+      "model": "tutorial_mod:block/ruby_furnace_lit",
+      "y": 90
+    },
+    "facing=north,lit=true": {
+      "model": "tutorial_mod:block/ruby_furnace_lit"
+    },
+    "facing=south,lit=true": {
+      "model": "tutorial_mod:block/ruby_furnace_lit",
+      "y": 180
+    },
+    "facing=west,lit=true": {
+      "model": "tutorial_mod:block/ruby_furnace_lit",
       "y": 270
     }
   }

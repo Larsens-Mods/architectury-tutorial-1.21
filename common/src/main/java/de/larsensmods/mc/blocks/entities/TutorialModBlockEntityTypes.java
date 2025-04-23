@@ -14,6 +14,7 @@ public class TutorialModBlockEntityTypes {
     private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(TutorialMod.MOD_ID, Registries.BLOCK_ENTITY_TYPE);
 
     public static RegistrySupplier<BlockEntityType<RubyCrateEntity>> RUBY_CRATE;
+    public static RegistrySupplier<BlockEntityType<RubyFurnaceEntity>> RUBY_FURNACE;
 
     public static void writeRegister(){
         BLOCK_ENTITIES.register();
