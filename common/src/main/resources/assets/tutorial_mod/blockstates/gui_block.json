@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "tutorial_mod:block/gui_block" }
+  }
+}

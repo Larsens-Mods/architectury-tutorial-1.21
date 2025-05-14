@@ -16,6 +16,8 @@ public class TutorialModBlockEntityTypes {
     public static RegistrySupplier<BlockEntityType<RubyCrateEntity>> RUBY_CRATE;
     public static RegistrySupplier<BlockEntityType<RubyFurnaceEntity>> RUBY_FURNACE;
 
+    public static RegistrySupplier<BlockEntityType<GUIBlockEntity>> GUI_BLOCK;
+
     public static void writeRegister(){
         BLOCK_ENTITIES.register();
     }

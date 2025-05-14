@@ -38,6 +38,8 @@ public class TutorialModItems {
     public static RegistrySupplier<Item> RUBY_CRATE;
     public static RegistrySupplier<Item> RUBY_FURNACE;
 
+    public static RegistrySupplier<Item> GUI_BLOCK;
+
     public static void initItems() {
         RUBY = registerItem("ruby", () -> new Item(baseProperties("ruby").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
@@ -58,6 +60,8 @@ public class TutorialModItems {
 
         RUBY_CRATE = registerItem("ruby_crate", () -> new BlockItem(TutorialModBlocks.RUBY_CRATE.get(), baseProperties("ruby_crate").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
         RUBY_FURNACE = registerItem("ruby_furnace", () -> new BlockItem(TutorialModBlocks.RUBY_FURNACE.get(), baseProperties("ruby_furnace").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+
+        GUI_BLOCK = registerItem("gui_block", () -> new BlockItem(TutorialModBlocks.GUI_BLOCK.get(), baseProperties("gui_block").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
         ITEMS.register();
     }

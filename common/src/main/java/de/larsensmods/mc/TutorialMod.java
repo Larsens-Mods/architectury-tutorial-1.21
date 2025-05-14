@@ -5,6 +5,7 @@ import de.larsensmods.mc.items.TutorialModItems;
 import de.larsensmods.mc.recipe.TutorialModRecipeSerializer;
 import de.larsensmods.mc.recipe.TutorialModRecipeType;
 import de.larsensmods.mc.tabs.TutorialModTabs;
+import de.larsensmods.mc.ui.TutorialModMenuTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +21,8 @@ public final class TutorialMod {
         TutorialModTabs.initTabs();
         TutorialModBlocks.initBlocks();
         TutorialModItems.initItems();
+
+        TutorialModMenuTypes.initMenuTypes();
 
         TutorialModRecipeType.initRecipeTypes();
         TutorialModRecipeSerializer.initRecipeSerializers();
