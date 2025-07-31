@@ -1,15 +1,17 @@
 package de.larsensmods.mc.entities.client;
 
+import net.minecraft.client.model.BabyModelTransform;
 import net.minecraft.client.model.QuadrupedModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
-import net.minecraft.client.model.geom.builders.CubeListBuilder;
-import net.minecraft.client.model.geom.builders.LayerDefinition;
-import net.minecraft.client.model.geom.builders.MeshDefinition;
-import net.minecraft.client.model.geom.builders.PartDefinition;
+import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 
+import java.util.Set;
+
 public class BullModel extends QuadrupedModel<LivingEntityRenderState> {
+
+    public static final MeshTransformer BABY_TRANSFORMER = new BabyModelTransform(false, 10.0F, 4.0F, Set.of("head"));
 
     public BullModel(ModelPart root) {
         super(root);
@@ -57,5 +59,9 @@ public class BullModel extends QuadrupedModel<LivingEntityRenderState> {
         partDefinition.addOrReplaceChild("left_front_leg", var2, PartPose.offset(4.0F, 12.0F, -5.0F));
 
         return LayerDefinition.create(meshDefinition, 64, 64);
+    }
+
+    public ModelPart getHead() {
+        return this.head;
     }
 }

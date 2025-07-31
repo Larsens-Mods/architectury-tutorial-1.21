@@ -11,6 +11,7 @@ public class TutorialModEntityRendering {
         if(Platform.isFabric()) {
             EntityRendererRegistry.register(TutorialModEntityTypes.BULL, BullRenderer::new);
             EntityModelLayerRegistry.register(TutorialModModelLayers.BULL, BullModel::createBodyLayer);
+            EntityModelLayerRegistry.register(TutorialModModelLayers.BULL_BABY, () -> BullModel.createBodyLayer().apply(BullModel.BABY_TRANSFORMER));
         }
     }
 

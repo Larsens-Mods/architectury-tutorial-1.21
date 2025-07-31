@@ -2,8 +2,10 @@ package de.larsensmods.mc.items;
 
 import de.larsensmods.mc.TutorialMod;
 import de.larsensmods.mc.blocks.TutorialModBlocks;
+import de.larsensmods.mc.entities.TutorialModEntityTypes;
 import de.larsensmods.mc.items.equipment.TutorialModArmorMaterials;
 import de.larsensmods.mc.tabs.TutorialModTabs;
+import dev.architectury.core.item.ArchitecturySpawnEggItem;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -40,6 +42,8 @@ public class TutorialModItems {
 
     public static RegistrySupplier<Item> GUI_BLOCK;
 
+    public static RegistrySupplier<Item> BULL_SPAWN_EGG;
+
     public static void initItems() {
         RUBY = registerItem("ruby", () -> new Item(baseProperties("ruby").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
@@ -62,6 +66,8 @@ public class TutorialModItems {
         RUBY_FURNACE = registerItem("ruby_furnace", () -> new BlockItem(TutorialModBlocks.RUBY_FURNACE.get(), baseProperties("ruby_furnace").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
         GUI_BLOCK = registerItem("gui_block", () -> new BlockItem(TutorialModBlocks.GUI_BLOCK.get(), baseProperties("gui_block").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
+
+        BULL_SPAWN_EGG = registerItem("bull_spawn_egg", () -> new ArchitecturySpawnEggItem(TutorialModEntityTypes.BULL, baseProperties("bull_spawn_egg").arch$tab(TutorialModTabs.TUTORIAL_TAB)));
 
         ITEMS.register();
     }

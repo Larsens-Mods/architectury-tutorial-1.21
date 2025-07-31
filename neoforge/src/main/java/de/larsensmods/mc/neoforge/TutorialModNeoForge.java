@@ -43,6 +43,7 @@ public final class TutorialModNeoForge {
         @SubscribeEvent
         public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
             event.registerLayerDefinition(TutorialModModelLayers.BULL, BullModel::createBodyLayer);
+            event.registerLayerDefinition(TutorialModModelLayers.BULL_BABY, () -> BullModel.createBodyLayer().apply(BullModel.BABY_TRANSFORMER));
         }
     }
 }
